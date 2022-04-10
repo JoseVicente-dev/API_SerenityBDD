@@ -11,7 +11,7 @@ import org.apache.log4j.Logger;
 public class SingleDayDataStepDefinitions extends ServiceSetUp {
 
     private static final Logger LOGGER = Logger.getLogger(SingleDayDataStepDefinitions.class);
-    private final Actor actor = Actor.named("InvestigadorCDC");
+    private final Actor actor = Actor.named("Jose the CDC analyst");
 
     @Dado("que como investigador del CDC deseo conocer los datos del {int}-{int}-{int}")
     public void queComoInvestigadorDelCDCDeseoConocerLosDatosDel(Integer year, Integer month, Integer day) {
