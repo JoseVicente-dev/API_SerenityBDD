@@ -24,13 +24,6 @@ public class GetDailyData implements Task {
         return this;
     }
 
-    //TODO: escribir metodo dinamico para la fecha y reordenar atributo
-    private String date;
-    public  GetDailyData fromDate(String date){
-        this.date=date;
-        return this;
-    }
-
     public static GetDailyData getDailyData(){
         return new GetDailyData();
     }
