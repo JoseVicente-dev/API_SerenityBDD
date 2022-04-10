@@ -1,6 +1,5 @@
 package co.com.sofka.question;
 
-import co.com.sofka.model.dailydata.Cases;
 import co.com.sofka.model.dailydata.DailyData;
 import net.serenitybdd.rest.SerenityRest;
 import net.serenitybdd.screenplay.Actor;
