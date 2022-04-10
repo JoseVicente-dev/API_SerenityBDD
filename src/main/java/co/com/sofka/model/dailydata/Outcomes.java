@@ -1,36 +1,39 @@
 package co.com.sofka.model.dailydata;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"hospitalized",
+"death"
+})
 public class Outcomes {
 
+@JsonProperty("hospitalized")
 private Hospitalized hospitalized;
+@JsonProperty("death")
 private Death death;
-private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+@JsonProperty("hospitalized")
 public Hospitalized getHospitalized() {
 return hospitalized;
 }
 
+@JsonProperty("hospitalized")
 public void setHospitalized(Hospitalized hospitalized) {
 this.hospitalized = hospitalized;
 }
 
+@JsonProperty("death")
 public Death getDeath() {
 return death;
 }
 
+@JsonProperty("death")
 public void setDeath(Death death) {
 this.death = death;
-}
-
-public Map<String, Object> getAdditionalProperties() {
-return this.additionalProperties;
-}
-
-public void setAdditionalProperty(String name, Object value) {
-this.additionalProperties.put(name, value);
 }
 
 }

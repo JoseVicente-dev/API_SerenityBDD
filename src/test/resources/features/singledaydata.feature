@@ -7,6 +7,6 @@ Característica: Datos de casos diarios
 
   @ScenarioName: numeroDeCasosYMuertesParaUnSoloDia
   Escenario: Numero de casos y muertes para un solo dia
-    Dado que como investigador del CDC deseo conocer los datos del 2020-07-03
-    Cuando solicite la informacion de casos y muertes
+    Dado que como investigador del CDC deseo conocer los datos de la pandemia
+    Cuando solicite la informacion de casos y muertes para el dia 2020-07-03
     Entonces obtendre las estadisticas del dia

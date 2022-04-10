@@ -148,7 +148,7 @@
             <a href="576946480b52ad056d6f5bddf874399c83582ecf90963cc074a14c70580e7d9f.html"><i class="fa fa-comments-o"></i> Features</a>
         </li>
     </ul>
-    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-04-2022 18:29</span>
+    <span class="date-and-time"><a href="build-info.html"><i class="fa fa-info-circle"></i></a> Report generated 09-04-2022 22:35</span>
     <br style="clear:left"/>
 </div>
     <div class="clr"></div>
@@ -199,9 +199,9 @@
                 <table class="outcome-header">
                     <tr>
                         <td colspan="2" class="test-title-bar">
-                            <span class="outcome-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon fa-2x' title='PENDING'></i></a></span>
+                            <span class="outcome-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon fa-2x' title='SUCCESS'></i></a></span>
                             <span class="test-case-title">
-                                <span class="pending-color">
+                                <span class="success-color">
                                     Numero de casos y muertes para un solo dia
                                         <span class="related-issue-title"></span>
                                 </span>
@@ -212,6 +212,47 @@
                 </table>
             </div>
 
+
+                <!-- CAST MEMBERS -->
+                <div>&nbsp;</div>
+                <div class="story-title">
+                    <table class="outcome-header">
+                        <tr>
+                            <td>
+                                <div>
+                                    <h3 class="discreet-story-header">
+                                        <i class="fa fa-2x fa-users"></i>
+                                        <span class="story-header-title">
+                                            <a class="btn btn-primary" data-toggle="collapse" href="#castDetails"
+                                               role="button" aria-expanded="true" aria-controls="castDetails">Cast</a>
+                                        </span>
+                                    </h3>
+
+                                    <div class="cast-member collapse" id="castDetails">
+                                        <table class="cast">
+                                            <tr>
+                                                    <td width="100%">
+                                                        <h4>
+                                                            <i class="fa fa-2x fa-user-o"></i>&nbsp;<span>Jose the CDC analyst</span>
+                                                            <h4>
+                                                                <p></p>
+                                                                <ul>
+                                                                        <li><strong>Jose the CDC analyst can:</strong>
+                                                                            <ul>
+                                                                                    <li>call an API at https://api.covidtracking.com/v2</li>
+                                                                            </ul>
+                                                                        </li>
+                                                                </ul>
+                                                    </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+                <!-- END CAST MEMBERS -->
 
 
         </div>
@@ -240,76 +281,290 @@
                     <td colspan="5"></td>
                 </tr>
 
-                    <tr class="test-PENDING">
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="0"></a>
                                 <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='far fa-stop-circle pending-icon ' title='PENDING'></i></a>
+                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
                                     <span class="top-level-step">
-                                                Dado que como investigador del CDC deseo conocer los datos del 2020-07-03
+                                                Dado que como investigador del CDC deseo conocer los datos de la pandemia
                                         </span>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">PENDING</span></td>
-                        <td width="100"><span class="top-level-step">0.01s</span></td>
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">0.1s</span></td>
                     </tr>
-                    <tr class="test-IGNORED">
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="1"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
-                                </span>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection1 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1')"
+                                   style="display:block;">
                                     <span class="top-level-step">
-                                                Cuando solicite la informacion de casos y muertes
+                                                Cuando solicite la informacion de casos y muertes para el dia 2020-07-03
                                         </span>
+                                </a>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">IGNORED</span></td>
-                        <td width="100"><span class="top-level-step">0s</span></td>
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">3.81s</span></td>
                     </tr>
-                    <tr class="test-IGNORED">
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection1" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="1-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection1-0 success-icon"
+                                       style="margin-left: 40px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Jose the cdc analyst get daily data
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">3.49s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection1-0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="90" class="step-icon">
+                            <a name="1-0-0"></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection1-0-0 success-icon"
+                                       style="margin-left: 60px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection1-0-0')"
+                                   style="display:block;">
+                                    <span class="nested-step">
+                                                Jose the CDC analyst executes a GET on the resource /us/daily//2020-03-07.json
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-step">3.4s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection1-0-0" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="110" class="step-icon">
+                            <a name="1-0-0-0"></a>
+                                <span style="margin-left: 80px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                GET https://api.covidtracking.com/v2/us/daily%2F%2F2020-03-07.json
+                                        </span>
+                                <span class="evidence">
+                                        <span class="piece-of-evidence">
+                    <span>
+                        <button type="button" class="btn btn-success btn-sm" data-toggle="collapse"
+                                data-target="#restModal-REST-5">
+                            REST Query
+                        </button>
+                    </span>
+                    <!-- Modal -->
+                    <div class="rest-query-details">
+                        <div class="collapse multi-collapse" id="restModal-REST-5">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4>Response</h4>
+                                        <p>Status code: 200</p>
+                                        <p>Content Type: null</p>
+                                        <h4>Request Headers</h4>
+                                        <pre>Accept=*/*</pre>
+                                        <h4>Content Body</h4>
+                                        <pre></pre>
+                                        <h4>Request Cookies</h4>
+                                        <pre></pre>
+                                        <h4>Response Headers</h4>
+                                        <pre>Connection: keep-alive<br>Content-Length: 767<br>Server: GitHub.com<br>Content-Type: application/json; charset=utf-8<br>Last-Modified: Mon, 14 Mar 2022 18:21:54 GMT<br>Access-Control-Allow-Origin: *<br>ETag: W/&quot;622f87c2-bed&quot;<br>expires: Sun, 10 Apr 2022 02:37:55 GMT<br>Cache-Control: max-age=600<br>Content-Encoding: gzip<br>x-proxy-cache: MISS<br>X-GitHub-Request-Id: F00E:1E97:2D4A40:462DBD:625240AB<br>Accept-Ranges: bytes<br>Date: Sun, 10 Apr 2022 03:35:35 GMT<br>Via: 1.1 varnish<br>Age: 495<br>X-Served-By: cache-bog6434-BOG<br>X-Cache: HIT<br>X-Cache-Hits: 1<br>X-Timer: S1649561736.933658,VS0,VE1<br>Vary: Accept-Encoding<br>X-Fastly-Request-ID: c7435dc9c397fc04c701a1c0bad5b7be3377c6c4</pre>
+                                    <h4>Response Body</h4>
+                                        <pre>{<br>    &quot;meta&quot;: {<br>        &quot;build_time&quot;: &quot;2021-06-01T07:03:25.055Z&quot;,<br>        &quot;license&quot;: &quot;CC-BY-4.0&quot;,<br>        &quot;version&quot;: &quot;2.0-beta&quot;,<br>        &quot;field_definitions&quot;: [<br>            {<br>                &quot;name&quot;: &quot;Total test results&quot;,<br>                &quot;field&quot;: &quot;tests.pcr.total&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;totalTestResults&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Hospital discharges&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    <br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Confirmed Cases&quot;,<br>                &quot;field&quot;: &quot;cases.confirmed&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;positiveCasesViral&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Cumulative hospitalized/Ever hospitalized&quot;,<br>                &quot;field&quot;: &quot;outcomes.hospitalized.total&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;hospitalizedCumulative&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Cumulative in ICU/Ever in ICU&quot;,<br>                &quot;field&quot;: &quot;outcomes.hospitalized.in_icu&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;inIcuCumulative&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Cumulative on ventilator/Ever on ventilator&quot;,<br>                &quot;field&quot;: &quot;hospitalization.on_ventilator.cumulative&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;onVentilatorCumulative&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Currently hospitalized/Now hospitalized&quot;,<br>                &quot;field&quot;: &quot;hospitalization.hospitalized.currently&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;hospitalizedCurrently&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Currently in ICU/Now in ICU&quot;,<br>                &quot;field&quot;: &quot;hospitalization.in_icu.currently&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;inIcuCurrently&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Currently on ventilator/Now on ventilator&quot;,<br>                &quot;field&quot;: &quot;hospitalization.on_ventilator.currently&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;onVentilatorCurrently&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Deaths (probable)&quot;,<br>                &quot;field&quot;: &quot;outcomes.death.probable&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;deathProbable&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Deaths (confirmed)&quot;,<br>                &quot;field&quot;: &quot;outcomes.death.confirmed&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;deathConfirmed&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Deaths (confirmed and probable)&quot;,<br>                &quot;field&quot;: &quot;outcomes.death.cumulative&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;death&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Probable Cases&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    <br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Last Update (ET)&quot;,<br>                &quot;field&quot;: &quot;meta.updated&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;lastUpdateEt&quot;,<br>                    &quot;lastUpdateTime&quot;,<br>                    &quot;checkTimeEt&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;New deaths&quot;,<br>                &quot;field&quot;: &quot;outcomes.death.calculated.change_from_prior_day&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;deathIncrease&quot;<br>                ]<br>            },<br>            {<br>                &quot;name&quot;: &quot;Date&quot;,<br>                &quot;field&quot;: &quot;date&quot;,<br>                &quot;deprecated&quot;: false,<br>                &quot;prior_names&quot;: [<br>                    &quot;dateModified&quot;<br>                ]<br>            }<br>        ]<br>    },<br>    &quot;data&quot;: {<br>        &quot;date&quot;: &quot;2020-03-07&quot;,<br>        &quot;states&quot;: 51,<br>        &quot;cases&quot;: {<br>            &quot;total&quot;: {<br>                &quot;value&quot;: 587,<br>                &quot;calculated&quot;: {<br>                    &quot;population_percent&quot;: 0.0002,<br>                    &quot;change_from_prior_day&quot;: 142,<br>                    &quot;seven_day_change_percent&quot;: 3161.1<br>                }<br>            }<br>        },<br>        &quot;testing&quot;: {<br>            &quot;total&quot;: {<br>                &quot;value&quot;: 12646,<br>                &quot;calculated&quot;: {<br>                    &quot;population_percent&quot;: 0.0038,<br>                    &quot;change_from_prior_day&quot;: 931,<br>                    &quot;seven_day_change_percent&quot;: 92.9<br>                }<br>            }<br>        },<br>        &quot;outcomes&quot;: {<br>            &quot;hospitalized&quot;: {<br>                &quot;currently&quot;: {<br>                    &quot;value&quot;: null,<br>                    &quot;calculated&quot;: {<br>                        &quot;population_percent&quot;: null,<br>                        &quot;change_from_prior_day&quot;: null,<br>                        &quot;seven_day_change_percent&quot;: null,<br>                        &quot;seven_day_average&quot;: null<br>                    }<br>                },<br>                &quot;in_icu&quot;: {<br>                    &quot;currently&quot;: {<br>                        &quot;value&quot;: null,<br>                        &quot;calculated&quot;: {<br>                            &quot;population_percent&quot;: null,<br>                            &quot;change_from_prior_day&quot;: null,<br>                            &quot;seven_day_change_percent&quot;: null,<br>                            &quot;seven_day_average&quot;: null<br>                        }<br>                    }<br>                },<br>                &quot;on_ventilator&quot;: {<br>                    &quot;currently&quot;: {<br>                        &quot;value&quot;: null,<br>                        &quot;calculated&quot;: {<br>                            &quot;population_percent&quot;: null,<br>                            &quot;change_from_prior_day&quot;: null,<br>                            &quot;seven_day_change_percent&quot;: null,<br>                            &quot;seven_day_average&quot;: null<br>                        }<br>                    }<br>                }<br>            },<br>            &quot;death&quot;: {<br>                &quot;total&quot;: {<br>                    &quot;value&quot;: 27,<br>                    &quot;calculated&quot;: {<br>                        &quot;population_percent&quot;: 0,<br>                        &quot;change_from_prior_day&quot;: 1,<br>                        &quot;seven_day_change_percent&quot;: 440,<br>                        &quot;seven_day_average&quot;: 17<br>                    }<br>                }<br>            }<br>        }<br>    }<br>}</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                                        </span>
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                    <tr class="test-SUCCESS">
 
                         <td width="50" class="step-icon">
                             <a name="2"></a>
-                                <span style="margin-left: 20px;"
-                                      class="top-level-icon"><a href='##beforetable'><i class='fa fa-ban ignored-icon ' title='IGNORED'></i></a>
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                                   style="display:block">
+                                    <i class="fa fa-plus-square-o imgstepSection2 success-icon"
+                                       style="margin-left: 20px; float:left; padding-right:5px"></i>
+                                </a>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                <a href="javaScript:void(0)" onClick="toggleDiv('stepSection2')"
+                                   style="display:block;">
+                                    <span class="top-level-step">
+                                                Entonces obtendre las estadisticas del dia
+                                        </span>
+                                </a>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="top-level-step">SUCCESS</span></td>
+                        <td width="100"><span class="top-level-step">0.6s</span></td>
+                    </tr>
+                        <tr>
+                            <td colspan="5">
+                                <table id="stepSection2" class="step-table-nested" style="display:none;">
+
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="2-0"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
                                 </span>
                         </td>
 
                         <td class="step-description-column">
                             <div class="step-description">
-                                    <span class="top-level-step">
-                                                Entonces obtendre las estadisticas del dia
+                                    <span class="nested-group-step">
+                                                Then El codigo de respuesta should be (200)
                                         </span>
                                 <span class="evidence">
                                 </span>
                             </div>
                         </td>
 
-                        <td width="130"><span class="top-level-step">IGNORED</span></td>
-                        <td width="100"><span class="top-level-step">0.01s</span></td>
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
                     </tr>
-                <tr class="test-PENDING">
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="2-1"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Then El numero de casos es mayor que cero should be a value greater than (0)
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
+                    </tr>
+                    <tr class="test-SUCCESS">
+
+                        <td width="70" class="step-icon">
+                            <a name="2-2"></a>
+                                <span style="margin-left: 40px;"
+                                      class="nested-group-icon"><a href='##beforetable'><i class='fa fa-check-circle-o success-icon ' title='SUCCESS'></i></a>
+                                </span>
+                        </td>
+
+                        <td class="step-description-column">
+                            <div class="step-description">
+                                    <span class="nested-group-step">
+                                                Then El numero de casos es mayor que cero should be a value greater than (0)
+                                        </span>
+                                <span class="evidence">
+                                </span>
+                            </div>
+                        </td>
+
+                        <td width="130"><span class="nested-group-step">SUCCESS</span></td>
+                        <td width="100"><span class="nested-group-step">0s</span></td>
+                    </tr>
+
+                                </table>
+                            </td>
+                        </tr>
+                <tr class="test-SUCCESS">
                         <td colspan="2"></td>
-                    <td width="130"><span class="top-level-step"><em>PENDING</em></span></td>
-                    <td width="100"><span class="top-level-step"><em>0.23s</em></span></td>
+                    <td width="130"><span class="top-level-step"><em>SUCCESS</em></span></td>
+                    <td width="100"><span class="top-level-step"><em>4.67s</em></span></td>
                 </tr>
 
             </table>

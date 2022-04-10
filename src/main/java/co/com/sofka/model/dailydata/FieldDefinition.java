@@ -1,55 +1,66 @@
 package co.com.sofka.model.dailydata;
 
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"name",
+"field",
+"deprecated",
+"prior_names"
+})
 public class FieldDefinition {
 
+@JsonProperty("name")
 private String name;
+@JsonProperty("field")
 private String field;
-private Boolean deprecated;
+@JsonProperty("deprecated")
+private boolean deprecated;
+@JsonProperty("prior_names")
 private List<String> priorNames = null;
-private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+@JsonProperty("name")
 public String getName() {
 return name;
 }
 
+@JsonProperty("name")
 public void setName(String name) {
 this.name = name;
 }
 
+@JsonProperty("field")
 public String getField() {
 return field;
 }
 
+@JsonProperty("field")
 public void setField(String field) {
 this.field = field;
 }
 
-public Boolean getDeprecated() {
+@JsonProperty("deprecated")
+public boolean isDeprecated() {
 return deprecated;
 }
 
-public void setDeprecated(Boolean deprecated) {
+@JsonProperty("deprecated")
+public void setDeprecated(boolean deprecated) {
 this.deprecated = deprecated;
 }
 
+@JsonProperty("prior_names")
 public List<String> getPriorNames() {
 return priorNames;
 }
 
+@JsonProperty("prior_names")
 public void setPriorNames(List<String> priorNames) {
 this.priorNames = priorNames;
-}
-
-public Map<String, Object> getAdditionalProperties() {
-return this.additionalProperties;
-}
-
-public void setAdditionalProperty(String name, Object value) {
-this.additionalProperties.put(name, value);
 }
 
 }

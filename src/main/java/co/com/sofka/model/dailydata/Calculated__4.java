@@ -1,54 +1,65 @@
 package co.com.sofka.model.dailydata;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"population_percent",
+"change_from_prior_day",
+"seven_day_change_percent",
+"seven_day_average"
+})
 public class Calculated__4 {
 
-private Double populationPercent;
-private Long changeFromPriorDay;
-private Double sevenDayChangePercent;
-private Long sevenDayAverage;
-private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+@JsonProperty("population_percent")
+private float populationPercent;
+@JsonProperty("change_from_prior_day")
+private int changeFromPriorDay;
+@JsonProperty("seven_day_change_percent")
+private float sevenDayChangePercent;
+@JsonProperty("seven_day_average")
+private int sevenDayAverage;
 
-public Double getPopulationPercent() {
+@JsonProperty("population_percent")
+public float getPopulationPercent() {
 return populationPercent;
 }
 
-public void setPopulationPercent(Double populationPercent) {
+@JsonProperty("population_percent")
+public void setPopulationPercent(float populationPercent) {
 this.populationPercent = populationPercent;
 }
 
-public Long getChangeFromPriorDay() {
+@JsonProperty("change_from_prior_day")
+public int getChangeFromPriorDay() {
 return changeFromPriorDay;
 }
 
-public void setChangeFromPriorDay(Long changeFromPriorDay) {
+@JsonProperty("change_from_prior_day")
+public void setChangeFromPriorDay(int changeFromPriorDay) {
 this.changeFromPriorDay = changeFromPriorDay;
 }
 
-public Double getSevenDayChangePercent() {
+@JsonProperty("seven_day_change_percent")
+public float getSevenDayChangePercent() {
 return sevenDayChangePercent;
 }
 
-public void setSevenDayChangePercent(Double sevenDayChangePercent) {
+@JsonProperty("seven_day_change_percent")
+public void setSevenDayChangePercent(float sevenDayChangePercent) {
 this.sevenDayChangePercent = sevenDayChangePercent;
 }
 
-public Long getSevenDayAverage() {
+@JsonProperty("seven_day_average")
+public int getSevenDayAverage() {
 return sevenDayAverage;
 }
 
-public void setSevenDayAverage(Long sevenDayAverage) {
+@JsonProperty("seven_day_average")
+public void setSevenDayAverage(int sevenDayAverage) {
 this.sevenDayAverage = sevenDayAverage;
-}
-
-public Map<String, Object> getAdditionalProperties() {
-return this.additionalProperties;
-}
-
-public void setAdditionalProperty(String name, Object value) {
-this.additionalProperties.put(name, value);
 }
 
 }

@@ -1,36 +1,39 @@
 package co.com.sofka.model.dailydata;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"value",
+"calculated"
+})
 public class Total__2 {
 
-private Long value;
+@JsonProperty("value")
+private int value;
+@JsonProperty("calculated")
 private Calculated__5 calculated;
-private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
-public Long getValue() {
+@JsonProperty("value")
+public int getValue() {
 return value;
 }
 
-public void setValue(Long value) {
+@JsonProperty("value")
+public void setValue(int value) {
 this.value = value;
 }
 
+@JsonProperty("calculated")
 public Calculated__5 getCalculated() {
 return calculated;
 }
 
+@JsonProperty("calculated")
 public void setCalculated(Calculated__5 calculated) {
 this.calculated = calculated;
-}
-
-public Map<String, Object> getAdditionalProperties() {
-return this.additionalProperties;
-}
-
-public void setAdditionalProperty(String name, Object value) {
-this.additionalProperties.put(name, value);
 }
 
 }

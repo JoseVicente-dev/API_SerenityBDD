@@ -1,63 +1,78 @@
 package co.com.sofka.model.dailydata;
 
-import java.util.HashMap;
-import java.util.Map;
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"date",
+"states",
+"cases",
+"testing",
+"outcomes"
+})
 public class Data {
 
+@JsonProperty("date")
 private String date;
-private Long states;
+@JsonProperty("states")
+private int states;
+@JsonProperty("cases")
 private Cases cases;
+@JsonProperty("testing")
 private Testing testing;
+@JsonProperty("outcomes")
 private Outcomes outcomes;
-private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
+@JsonProperty("date")
 public String getDate() {
 return date;
 }
 
+@JsonProperty("date")
 public void setDate(String date) {
 this.date = date;
 }
 
-public Long getStates() {
+@JsonProperty("states")
+public int getStates() {
 return states;
 }
 
-public void setStates(Long states) {
+@JsonProperty("states")
+public void setStates(int states) {
 this.states = states;
 }
 
+@JsonProperty("cases")
 public Cases getCases() {
 return cases;
 }
 
+@JsonProperty("cases")
 public void setCases(Cases cases) {
 this.cases = cases;
 }
 
+@JsonProperty("testing")
 public Testing getTesting() {
 return testing;
 }
 
+@JsonProperty("testing")
 public void setTesting(Testing testing) {
 this.testing = testing;
 }
 
+@JsonProperty("outcomes")
 public Outcomes getOutcomes() {
 return outcomes;
 }
 
+@JsonProperty("outcomes")
 public void setOutcomes(Outcomes outcomes) {
 this.outcomes = outcomes;
-}
-
-public Map<String, Object> getAdditionalProperties() {
-return this.additionalProperties;
-}
-
-public void setAdditionalProperty(String name, Object value) {
-this.additionalProperties.put(name, value);
 }
 
 }

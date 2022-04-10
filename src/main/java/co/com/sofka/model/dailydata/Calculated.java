@@ -1,47 +1,52 @@
 package co.com.sofka.model.dailydata;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import com.fasterxml.jackson.annotation.JsonPropertyOrder;
 
-import java.util.HashMap;
-import java.util.Map;
-
+@JsonInclude(JsonInclude.Include.NON_NULL)
+@JsonPropertyOrder({
+"population_percent",
+"change_from_prior_day",
+"seven_day_change_percent"
+})
 public class Calculated {
 
-    private Double populationPercent;
-    private Long changeFromPriorDay;
-    private Double sevenDayChangePercent;
-    private Map<String, Object> additionalProperties = new HashMap<String, Object>();
+@JsonProperty("population_percent")
+private float populationPercent;
+@JsonProperty("change_from_prior_day")
+private int changeFromPriorDay;
+@JsonProperty("seven_day_change_percent")
+private float sevenDayChangePercent;
 
-    public Double getPopulationPercent() {
-        return populationPercent;
-    }
-
-    public void setPopulationPercent(Double populationPercent) {
-        this.populationPercent = populationPercent;
-    }
-
-    public Long getChangeFromPriorDay() {
-        return changeFromPriorDay;
-    }
-
-    public void setChangeFromPriorDay(Long changeFromPriorDay) {
-        this.changeFromPriorDay = changeFromPriorDay;
-    }
-
-    public Double getSevenDayChangePercent() {
-        return sevenDayChangePercent;
-    }
-
-    public void setSevenDayChangePercent(Double sevenDayChangePercent) {
-        this.sevenDayChangePercent = sevenDayChangePercent;
-    }
-
-    public Map<String, Object> getAdditionalProperties() {
-        return this.additionalProperties;
-    }
-
-    public void setAdditionalProperty(String name, Object value) {
-        this.additionalProperties.put(name, value);
-    }
-
+@JsonProperty("population_percent")
+public float getPopulationPercent() {
+return populationPercent;
 }
 
+@JsonProperty("population_percent")
+public void setPopulationPercent(float populationPercent) {
+this.populationPercent = populationPercent;
+}
+
+@JsonProperty("change_from_prior_day")
+public int getChangeFromPriorDay() {
+return changeFromPriorDay;
+}
+
+@JsonProperty("change_from_prior_day")
+public void setChangeFromPriorDay(int changeFromPriorDay) {
+this.changeFromPriorDay = changeFromPriorDay;
+}
+
+@JsonProperty("seven_day_change_percent")
+public float getSevenDayChangePercent() {
+return sevenDayChangePercent;
+}
+
+@JsonProperty("seven_day_change_percent")
+public void setSevenDayChangePercent(float sevenDayChangePercent) {
+this.sevenDayChangePercent = sevenDayChangePercent;
+}
+
+}
